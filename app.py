@@ -1,7 +1,7 @@
 from flask import Flask, g, escape, session, redirect, render_template, request, jsonify, Response
 from Misc.functions import *
 
-app = Flask(_name_)
+app = Flask(__name__)
 app.secret_key = '#$ab9&^BB00_.'
 
 # Setting DAO Class
