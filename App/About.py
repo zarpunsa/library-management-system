@@ -1,2 +1,3 @@
+from App.Actor import Actor
 class About():
-    nama = "rizky"
+    nama = "rizky"
