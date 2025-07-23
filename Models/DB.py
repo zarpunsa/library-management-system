@@ -4,10 +4,10 @@ from pymysql.cursors import DictCursor
 
 class DB(object):
 	"""Initialize mysql database """
-	host = "localhost"
+	host = "trolley.proxy.rlwy.net"
 	user = "root"
-	password = ""
-	db = "lms"
+	password = "jpyuiOGsdbSnEIqeJGgejeoqvOdknnZU"
+	db = "railway"
 	table = ""
 
 	def __init__(self, app):
