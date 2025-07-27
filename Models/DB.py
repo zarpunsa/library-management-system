@@ -16,7 +16,7 @@ class DB(object):
 		app.config["MYSQL_DATABASE_PASSWORD"] = self.password;
 		app.config["MYSQL_DATABASE_DB"] = self.db;
 		app.config["MYSQL_DATABASE_HOST"] = 'trolley.proxy.rlwy.net';
-		app.config["MYSQL_DATABASE_PORT"] = '51166';
+		app.config["MYSQL_DATABASE_PORT"] = 51166;
 
 		self.mysql = MySQL(app, cursorclass=DictCursor)
 
