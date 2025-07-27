@@ -6,7 +6,7 @@ class DB(object):
 	"""Initialize mysql database """
 	host = "trolley.proxy.rlwy.net"
 	user = "root"
-	password = "jpyuiOGsdbSnEIqeJGgejeoqvOdknnZU"
+	password = "RVKogNFGkhASWTvBiTMUyACoUaxqXUoI"
 	db = "railway"
 	table = ""
 
@@ -15,6 +15,8 @@ class DB(object):
 		app.config["MYSQL_DATABASE_USER"] = self.user;
 		app.config["MYSQL_DATABASE_PASSWORD"] = self.password;
 		app.config["MYSQL_DATABASE_DB"] = self.db;
+		app.config["MYSQL_DATABASE_HOST"] = 'trolley.proxy.rlwy.net';
+		app.config["MYSQL_DATABASE_PORT"] = '51166';
 
 		self.mysql = MySQL(app, cursorclass=DictCursor)
 
